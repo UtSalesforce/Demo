@@ -1,1 +1,1 @@
-echo "Sample Output"
+javac -version
