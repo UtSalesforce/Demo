@@ -1,1 +1,2 @@
-javac -version
+javac Build.java
+java Build
