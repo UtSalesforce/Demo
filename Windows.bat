@@ -1,1 +1,2 @@
-echo "Building a project from Github repository"
+javac Build.java
+java Build
