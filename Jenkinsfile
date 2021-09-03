@@ -33,7 +33,7 @@ pipeline
                 {
                     agent
                     {
-                        label 'Windows'
+                        label 'master'
                     }
                     steps
                     {
