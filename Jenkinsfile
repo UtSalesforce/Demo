@@ -12,7 +12,7 @@ stage("Test")
 steps
 {
 echo "calling test.bat file"
-sh './scripts/Test.sh'
+sh 'Test.sh'
 }
 }
 }
