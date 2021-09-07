@@ -12,7 +12,7 @@ stage("Test")
 steps
 {
 echo "calling test.bat file"
-bat './new-feature/scripts/Sample.bat'
+bat '/new-feature/scripts/Sample.bat'
 }
 }
 }
