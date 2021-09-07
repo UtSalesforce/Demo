@@ -12,7 +12,7 @@ stage("Test")
 steps
 {
 echo "calling test.bat file"
-bat 'https://github.com/UtSalesforce/Demo/tree/new-feature/scripts/Test.sh'
+sh 'https://github.com/UtSalesforce/Demo/tree/new-feature/scripts/Test.sh'
 }
 }
 }
