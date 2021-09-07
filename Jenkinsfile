@@ -1,10 +1,10 @@
 pipeline
 {
 agent any
-    environment
+    /*environment
     {
         PATH='C:/Users/UTCHAUDH/AppData/Local/Programs/Git/git-bash.exe'
-    }
+    }*/
 stages
 {
 stage("Test")
@@ -12,7 +12,7 @@ stage("Test")
 steps
 {
 echo "calling test.bat file"
-sh 'Test.sh'
+bat 'Test.bat'
 }
 }
 }
