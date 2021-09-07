@@ -1,7 +1,7 @@
 pipeline
 {
 agent any
-    */environment
+    /*environment
     {
         PATH='C:/Program Files/Git/bin/bash.exe'
     }*/
