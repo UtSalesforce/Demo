@@ -3,7 +3,7 @@ pipeline
 agent any
     environment
     {
-        PATH="C:/Users/UTCHAUDH/AppData/Local/Programs/Git/bin"
+        PATH="C:/Users/UTCHAUDH/AppData/Local/Programs/Git/bin/"
     }
 stages
 {
