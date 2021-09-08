@@ -1,10 +1,10 @@
 pipeline
 {
 agent any
-    environment
+    /*environment
     {
         PATH="C:/Users/UTCHAUDH/AppData/Local/Programs/Git/bin/"
-    }
+    }*/
 stages
 {
 stage("Test")
