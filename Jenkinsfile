@@ -1,19 +1,19 @@
 pipeline
 {
 agent any
-    /*environment
+    environment
     {
-        PATH="C:/Users/UTCHAUDH/AppData/Local/Programs/Git/bin/sh.exe"
-    }*/
-stages
-{
-stage("Test")
-{
-steps
-{
-echo "calling test.sh file"
-sh 'Test.sh'
-}
-}
-}
+        PATH="C:/Users/UTCHAUDH/AppData/Local/Programs/Git/bin/"
+    }
+    stages
+    {
+        stage("Test")
+        {
+            steps
+            {
+                echo "calling test.sh file"
+                sh './Test.sh'
+            }
+        }
+    }
 }
