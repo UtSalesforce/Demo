@@ -7,13 +7,17 @@ def server_key_file = "C:/openssl/bin/server.key"
 pipeline
 {
     agent any
+    environment
+    {
+        PATH="C:/Users/UTCHAUDH/AppData/Local/Programs/Git/bin/;C:/Users/UTCHAUDH/AppData/Local/Programs/Git/usr/bin;c:/Windows/System32/;C:/Users/UTCHAUDH/AppData/Local/Programs/Git/mingw64/bin/"
+    }
     stages
     {
         stage("Authorize Sandbox") 
         {
             steps
             {
-                rc = command "${toolbelt}/sfdx auth:jwt:grant --instanceurl ${Instance_Url} --clientid ${Consumer_Key} --username ${Username} --jwtkeyfile ${server_key_file} --setalias DevSandbox"
+                rc = ${toolbelt}/sfdx auth:jwt:grant --instanceurl ${Instance_Url} --clientid ${Consumer_Key} --username ${Username} --jwtkeyfile ${server_key_file} --setalias DevSandbox
                 if (rc != 0) 
                 {
                     error "Salesforce dev hub org authorization failed."
