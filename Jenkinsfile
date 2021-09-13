@@ -17,7 +17,7 @@ pipeline
         {
             steps
             {
-                rc = sfdx auth:jwt:grant --instanceurl ${Instance_Url} --clientid ${Consumer_Key} --username ${Username} --jwtkeyfile ${server_key_file} --setalias DevSandbox
+                rc = sfdx force:auth:jwt:grant --instanceurl ${Instance_Url} --clientid ${Consumer_Key} --username ${Username} --jwtkeyfile ${server_key_file} --setalias DevSandbox
                 if (rc != 0) 
                 {
                     error "Salesforce dev hub org authorization failed."
