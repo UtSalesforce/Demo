@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-                bat "sfdx --version"
+                echo "Executing Jenkins file"
             }
         }
     }
