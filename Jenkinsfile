@@ -12,7 +12,7 @@ agent any
             steps
             {
                 echo "calling test.sh file"
-                sh 'echo "Hellow Utkarsh"'
+                sh './Test.sh'
             }
         }
     }
