@@ -1,10 +1,10 @@
 pipeline
 {
 agent any
-    /*environment
+    environment
     {
-        PATH = "C:/Users/UTCHAUDH/AppData/Local/Programs/Git/bin;/c/WINDOWS/System32;C:/Users/UTCHAUDH/AppData/Local/Programs/Git/usr/bin"
-    }*/
+        PATH = "C:/Users/UTCHAUDH/AppData/Local/Programs/Git/bin/sh.exe;/c/WINDOWS/System32/cmd.exe;C:/Users/UTCHAUDH/AppData/Local/Programs/Git/usr/bin/nohup.exe"
+    }
     stages
     {
         stage("Test")
