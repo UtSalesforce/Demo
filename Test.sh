@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "creating shell script"
+echo "Branch Name=${GIT_BRANCH}"
