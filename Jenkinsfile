@@ -11,8 +11,11 @@ agent any
         {
             steps
             {
-                def gitcommit = ${GIT_COMMIT}
-                echo "$gitcommit"
+                script
+                {
+                    def gitcommit = ${GIT_COMMIT}
+                    echo "$gitcommit"
+                }
             }
         }
     }
