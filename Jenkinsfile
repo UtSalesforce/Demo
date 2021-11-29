@@ -11,8 +11,8 @@ agent any
         {
             steps
             {
-                echo "calling test.sh file"
-                sh './Test.sh'
+                def gitcommit = ${GIT_COMMIT}
+                echo "$gitcommit"
             }
         }
     }
