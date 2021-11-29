@@ -13,7 +13,7 @@ agent any
             {
                 script
                 {
-                    def gitcommit = ${env.GIT_COMMIT}
+                    def gitcommit = env.GIT_COMMIT
                     echo "$gitcommit"
                 }
             }
