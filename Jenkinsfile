@@ -13,7 +13,7 @@ agent any
             {
                 script
                 {
-                    def gitbranch = env.BRANCH_NAME
+                    def gitbranch = env.GIT_BRANCH
                     def gitcommit = env.GIT_COMMIT
                     echo "$gitbranch"
                     echo "$gitcommit"
